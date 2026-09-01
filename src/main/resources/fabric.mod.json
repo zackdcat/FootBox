@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "foot-box",
+	"version": "${version}",
+	"name": "FootBox",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/foot-box/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.zackdcat.footbox.FootBox"
+		]
+	},
+	"mixins": [
+		"foot-box.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
