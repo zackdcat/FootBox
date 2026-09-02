@@ -3,19 +3,20 @@
 	"id": "foot-box",
 	"version": "${version}",
 	"name": "FootBox",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Displays a wireframe hitbox in first person to show what you can stand on.",
 	"authors": [
-		"Me!"
+		"zackdcat"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"email": "zwhseton@gmail.com",
+		"sources": "https://github.com/zackdcat/foot-box",
+		"issues": "https://github.com/zackdcat/foot-box/issues"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/foot-box/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
+		"client": [
 			"com.zackdcat.footbox.FootBox"
 		]
 	},
@@ -23,9 +24,20 @@
 		"foot-box.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
-		"java": ">=25",
+		"fabricloader": ">=0.16.0",
+		"minecraft": ">=1.21.4",
+		"java": ">=21",
 		"fabric-api": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"badges": ["clientside"],
+			"update_checker": true,
+			"links": {
+				"modmenu.issues": "https://github.com/zackdcat/foot-box/issues",
+				"modmenu.sources": "https://github.com/zackdcat/foot-box",
+				"modmenu.modrinth": "https://modrinth.com/mod/footbox"
+			}
+		}
 	}
 }
