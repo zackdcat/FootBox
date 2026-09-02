@@ -2,8 +2,10 @@
 	"required": true,
 	"package": "com.zackdcat.footbox.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [],
-	"client": [],
+	"client": [
+		"LevelRendererMixin",
+		"DebugRendererMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	}
